@@ -100,21 +100,17 @@
 
         <p>Jos vuonna 1951 juoma tekee pieneksi, mikä tekee isoksi?</p>
 
-        <form action="#" onsubmit="checkPart4()">
+        <div class="form-group">
+            <input id="mika-tekee-isoksi" type="text" class="form-control" placeholder="Kirjoita vastauksesi tähän" />
+        </div>
 
-            <div class="form-group">
-                <input id="mika-tekee-isoksi" type="text" class="form-control" placeholder="Kirjoita vastauksesi tähän" />
-            </div>
+        <div id="vinkki">
+            <p>Onko liian hankala? <a href="https://fi.wikipedia.org/wiki/Liisa_Ihmemaassa_(vuoden_1951_elokuva)" target="_blank">Katso vinkki!</a></p>
+        </div>
 
-            <div id="vinkki">
-                <p>Onko hankala? <a href="https://fi.wikipedia.org/wiki/Liisa_Ihmemaassa_(vuoden_1951_elokuva)" target="_blank">Katso vinkki!</a></p>
-            </div>
-
-            <div class="btn-group">
-                <input type="submit" class="btn btn-primary" value="Vastaa" />
-            </div>
-
-        </form>
+        <div class="btn-group">
+            <input type="submit" class="btn btn-primary" onclick="checkPart4()" value="Vastaa" />
+        </div>
 
     </div>
 
