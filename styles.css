@@ -1,0 +1,32 @@
+p {
+    font-size: 1.5em;
+}
+
+.part {
+    display: none;
+    padding: 20px 5px;
+}
+
+#vinkki {
+    display: none;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 50%;
+    animation: spin 3s infinite ease-in-out;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(-30deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(-30deg);
+    }
+}

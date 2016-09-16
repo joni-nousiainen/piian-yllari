@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yllätys</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="container">
+
+    <div id="p1" class="part">
+
+        <p>Tämä on bonusyllätys syntymäpäiväsankarille!</p>
+
+        <p>Ratkaise arvoitus ja palkinto odottaa...</p>
+
+        <div class="btn-group">
+            <button class="btn btn-primary" onclick="openPart('p2')">Avaa ensimmäinen kysymys</button>
+        </div>
+
+    </div>
+
+    <div id="p2" class="part">
+
+        <p>Aloitetaan helpolla...</p>
+
+        <p>Kuka tippui kaninkoloon?</p>
+
+        <div class="radio">
+            <label for="Lumikki">
+                <input id="Lumikki" name="kuka-tippui-radio" type="radio" />
+                Lumikki
+            </label>
+        </div>
+
+        <div class="radio">
+            <label for="Liisa">
+                <input id="Liisa" name="kuka-tippui-radio" type="radio" />
+                Liisa
+            </label>
+        </div>
+
+        <div class="radio">
+            <label for="Kerttu">
+                <input id="Kerttu" name="kuka-tippui-radio" type="radio" />
+                Kerttu
+            </label>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn btn-primary" onclick="checkPart2()">Vastaa</button>
+        </div>
+
+    </div>
+
+    <div id="p3" class="part">
+
+        <p>Tadaa, ihan oikein!</p>
+
+        <p>Kuka hallitsee Ihmemaata?</p>
+
+        <div class="radio">
+            <label for="Ristijätkä">
+                <input id="Ristijätkä" name="kuka-hallitsee-radio" type="radio" />
+                Ristijätkä
+            </label>
+        </div>
+
+        <div class="radio">
+            <label for="Patakuningas">
+                <input id="Patakuningas" name="kuka-hallitsee-radio" type="radio" />
+                Patakuningas
+            </label>
+        </div>
+
+        <div class="radio">
+            <label for="Herttakuningatar">
+                <input id="Herttakuningatar" name="kuka-hallitsee-radio" type="radio" />
+                Herttakuningatar
+            </label>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn btn-primary" onclick="checkPart3()">Vastaa</button>
+        </div>
+
+    </div>
+
+    <div id="p4" class="part">
+
+        <p>
+            Aivan oikein! <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+        </p>
+
+        <p>Ratkaisetkohan koko arvoituksen...</p>
+
+        <p>Jos vuonna 1951 juoma tekee pieneksi, mikä tekee isoksi?</p>
+
+        <form action="#" onsubmit="checkPart4()">
+
+            <div class="form-group">
+                <input id="mika-tekee-isoksi" type="text" class="form-control" placeholder="Kirjoita vastauksesi tähän" />
+            </div>
+
+            <div id="vinkki">
+                <p>Onko hankala? <a href="https://fi.wikipedia.org/wiki/Liisa_Ihmemaassa_(vuoden_1951_elokuva)" target="_blank">Katso vinkki!</a></p>
+            </div>
+
+            <div class="btn-group">
+                <input type="submit" class="btn btn-primary" value="Vastaa" />
+            </div>
+
+        </form>
+
+    </div>
+
+    <div id="p5" class="part">
+
+        <p>Upeaa! Vastasit oikein kaikkiin kysymyksiin.</p>
+
+        <p>Palkintosi löytyy <strong>Ainon laukusta</strong>.</p>
+
+        <p>Etsi <strong>punaista pistettä</strong>.</p>
+
+        <p>Palkinnon yhteydessä on myös koodi...</p>
+
+        <div class="form-group">
+            <input id="koodi" type="text" class="form-control" placeholder="Syötä koodi tähän" />
+        </div>
+
+        <div class="btn-group">
+            <button class="btn btn-primary" onclick="checkPart5()">Tarkista koodi</button>
+        </div>
+
+    </div>
+
+    <div id="p6" class="part">
+
+        <p>Hyvä Piia!</p>
+
+        <p>Vielä kerran <strong>paljon onnea 30-vuotissyntymäpäiväsi johdosta!</strong></p>
+
+        <p>Toivottavat...</p>
+
+        <p>
+            <img src="img/joni.jpg" alt="Joni" title="Joni" />
+            <img src="img/niina.jpg" alt="Niina" title="Niina" />
+            <img src="img/hanna.jpg" alt="Hanna" title="Hanna" />
+        </p>
+
+    </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="logic.js"></script>
+
+</body>
+</html>
