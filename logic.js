@@ -48,5 +48,5 @@ function displayTryAgain() {
 }
 
 $(document).ready(function() {
-    openPart('p1');
+    openPart('p6');
 });

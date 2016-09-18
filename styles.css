@@ -11,15 +11,49 @@ p {
     display: none;
 }
 
+#p6 {
+    text-align: center;
+}
+
 img {
     width: 200px;
     height: 200px;
     margin: 10px;
     border-radius: 50%;
-    animation: spin 3s infinite ease-in-out;
 }
 
-@keyframes spin {
+img.sankari {
+    width: 220px;
+    height: 220px;
+    animation: beats 1s infinite ease-in-out;
+    border: 20px solid transparent;
+}
+
+@keyframes beats {
+    10% {
+        transform: scale(1.04);
+    }
+    15% {
+        transform: scale(1.05);
+        border: 20px solid pink;
+    }
+    30% {
+        transform: scale(1.09);
+    }
+    35% {
+        transform: scale(1.1);
+        border: 20px solid hotpink;
+    }
+    80% {
+        border: 20px solid transparent;
+    }
+}
+
+img.toivottajat {
+    animation: rock 3s infinite ease-in-out;
+}
+
+@keyframes rock {
     0% {
         transform: rotate(-30deg);
     }
