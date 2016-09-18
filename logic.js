@@ -22,7 +22,7 @@ function checkPart4() {
     }
     else {
         displayTryAgain();
-        $('#vinkki').show(1000);
+        $('#vinkki').fadeIn(2000);
     }
     return false;
 }
@@ -38,8 +38,15 @@ function checkPart5() {
 }
 
 function openPart(id) {
-    $('.part').hide();
-    $('#' + id).show();
+    var visibleParts = $('.part:visible');
+    if (visibleParts.length) {
+        visibleParts.fadeOut(200, function () {
+            $('#' + id).fadeIn(200);
+        });
+    }
+    else {
+        $('#' + id).fadeIn(500);
+    }
 }
 
 function displayTryAgain() {
